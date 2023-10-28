@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+  }
+
+  body{
+    min-height: 100vh;
+    min-height: 100dvh;  /* cASCADE */
+    padding: 3rem;
+    background-image: url('./img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .form-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .form-wrapper input{
+     flex-basis: 300px;    /* flex-basis This works as max width in flex chind only */
+     padding: 0.3rem;
+     border-radius: 0.5rem;
+     border: none;
+  }
+
+  .form-wrapper button{
+    padding: 0.2rem;
+    background-color: bisque;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    flex-basis: 150px;
+    border-radius: 0.5rem;
+  }
+
+  .tasks-wrapper{
+    margin-block: 5rem;
+    /* margin-inline: 3rem; */
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+
+  .tasks-wrapper h3{
+    font-size: 1.5rem;
+  }
+
+  .tasks-wrapper p{
+    font-size: 0.8rem;
+
+  }
+
+  .tasks-lane{
+    background-color: gainsboro;
+    min-height: 60vh;
+    padding: 1rem;
+    color: black;
+  }
+
+  .task{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin-block: 0.3rem;
+    cursor: move;
+    transition: transform 0.3s ease-in;
+  }
+
+  .task:hover{
+    /* transition: transform 0.3s ease-in; */
+    /* transform: scale(1.05);
+  } */
